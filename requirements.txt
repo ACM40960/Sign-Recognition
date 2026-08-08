@@ -1,0 +1,12 @@
+numpy
+pandas
+opencv-python
+Pillow
+ImageHash
+matplotlib
+seaborn
+scikit-learn
+tensorflow
+gTTS
+ipywidgets
+google-colab
