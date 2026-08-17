@@ -32,12 +32,10 @@ Computational Science
 -   [Usage](#usage)
 -   [Limitations](#limitations)
 -   [Future Work](#future-work)
--   [References](#references)
--   [License](#license)
 
 ------------------------------------------------------------------------
 
-## Motivation {#motivation}
+## Motivation
 
 Communication between sign-language users and people unfamiliar with
 sign language can be difficult in everyday situations. This project
@@ -45,7 +43,7 @@ explores a computer-vision-based approach to recognising static ASL and
 ISL hand gestures and converting recognised signs into accessible text
 and speech.
 
-## Objectives {#objectives}
+## Objectives
 
 -   Recognise ASL and ISL static hand gestures
 -   Use deep learning models suited to each dataset
@@ -55,7 +53,7 @@ and speech.
 -   Evaluate performance using accuracy, precision, recall, F1-score,
     and confusion matrices
 
-## Datasets {#datasets}
+## Datasets
 
 ### ASL Dataset (American Sign Language)
 
@@ -75,7 +73,7 @@ and speech.
 Duplicate images within each ISL class were filtered out using
 perceptual hashing (`imagehash`) prior to training.
 
-## Methodology {#methodology}
+## Methodology
 
 Dataset-specific deep learning models are used for sign classification:
 a custom CNN for ASL, and a pretrained MobileNetV2 architecture
@@ -107,7 +105,7 @@ a custom CNN for ASL, and a pretrained MobileNetV2 architecture
 -   **Optimizer / Loss:** Adam / categorical cross-entropy
 -   **Epochs:** 5
 
-## Sign Recognition Pipeline {#sign-recognition-pipeline}
+## Sign Recognition Pipeline
 
 ```         
 START → Data Collection → ASL/ISL Model → Prediction + Confidence → English/Telugu Speech
@@ -118,7 +116,7 @@ through the trained ASL/ISL model, predicts the sign with a confidence
 score, and converts the result into English and Telugu speech via
 `gTTS`.
 
-## Results {#results}
+## Results
 
 Model performance was evaluated using accuracy, precision, recall,
 F1-score, and confusion matrices on held-out validation splits for both
@@ -177,7 +175,7 @@ accessible bilingual speech output — e.g. a recognised "A" sign is
 displayed as "The predicted sign is A" in English and its Telugu
 equivalent, then read aloud via `gTTS`.
 
-## Repository Structure {#repository-structure}
+## Repository Structure
 
 ```         
 Sign-Recognition/
@@ -195,7 +193,7 @@ Sign-Recognition/
 └── requirements.txt
 ```
 
-## Installation {#installation}
+## Installation
 
 **Requirements:** Python 3.x, Jupyter Notebook
 
@@ -217,7 +215,7 @@ Download the datasets and place them under `data/`: - ASL:
 [data.mendeley.com/datasets/yx7kdssfjp/1](https://data.mendeley.com/datasets/yx7kdssfjp/1)
 → `data/ISL_dataset/data/`
 
-## Usage {#usage}
+## Usage
 
 1.  Open the notebook in `source-code/` in Jupyter Notebook / JupyterLab
 2.  Run the setup cells to load the datasets from `data/ASL_dataset` and
@@ -230,14 +228,14 @@ Download the datasets and place them under `data/`: - ASL:
 5.  Run the inference/UI cells to capture or select an image, predict
     the sign, and hear the English/Telugu speech output
 
-## Limitations {#limitations}
+## Limitations
 
 -   Current system recognises static gestures only
 -   Performance affected by lighting, background, and hand orientation
 -   Limited gesture vocabulary bounded by dataset size
 -   Continuous sign language recognition (words/sentences) not supported
 
-## Future Work {#future-work}
+## Future Work
 
 -   Continuous sign recognition
 -   Expand vocabulary to words and sentences
