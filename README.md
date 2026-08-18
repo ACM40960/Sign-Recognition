@@ -61,6 +61,7 @@ and speech.
 -   Contains images of ASL alphabet signs
 -   Collected from multiple donors
 -   Pre-processed and organised by class
+-   Number of images present in the dataset : 12,290.
 
 ### ISL Dataset (Indian Sign Language)
 
@@ -69,6 +70,7 @@ and speech.
 -   Contains images of ISL alphabet and number signs
 -   High-quality dataset captured from multiple signers
 -   Organised by class
+-   Number of images present in the dataset : 42,000.
 
 Duplicate images within each ISL class were filtered out using
 perceptual hashing (`imagehash`) prior to training.
