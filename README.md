@@ -193,7 +193,12 @@ Sign-Recognition/
 ``` bash
 git clone https://github.com/ACM40960/Sign-Recognition.git
 cd Sign-Recognition
+python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
+pip install ipykernel
+python -m ipykernel install --user --name=venv --display-name "Python (Sign-Recognition)"
+jupyter notebook
 ```
 
 Or install dependencies individually as used in the notebook:
