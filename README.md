@@ -167,8 +167,9 @@ accessible bilingual speech output — e.g. a recognised "A" sign is
 displayed as "The predicted sign is A" in English and its Telugu
 equivalent, then read aloud via `gTTS`.
 
-[ISL Sign "8" — Real-Time Prediction](./output/Video%20output%20ISL%20-%208.mp4)
-[ISL Sign "U" — Real-Time Prediction](./output/Video%20output%20ISL%20-%20U.mp4)
+- [ISL Sign "8" — Real-Time Prediction](./output/Video%20output%20ISL%20-%208.mp4)
+
+- [ISL Sign "U" — Real-Time Prediction](./output/Video%20output%20ISL%20-%20U.mp4)
 
 ## Repository Structure
 
