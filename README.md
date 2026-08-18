@@ -131,6 +131,9 @@ of misclassifications between visually similar gestures.
 | ASL — Custom CNN  | **89.14%**          |
 | ISL — MobileNetV2 | **98.84%**          |
 
+### Confusion Matrix
+![ISL Confusion Matrix](./output/confusion%20matrix%20-%20ISL.png)
+
 ### ISL Classification Report
 
 The ISL model (35 classes: digits 1–9 and letters A–Z) achieves a
