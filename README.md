@@ -159,14 +159,6 @@ for the ASL model.
 
 ![ASL training curves](./assets/asl_training_curves.png)
 
-Sample predictions (see poster for full figures):
-
-| Dataset | Predicted | Actual |
-|---------|-----------|--------|
-| ISL     | 3         | 3      |
-| ISL     | A         | A      |
-| ASL     | O         | O      |
-| ASL     | P         | P      |
 
 ## Bilingual Output (English & Telugu)
 
@@ -190,6 +182,7 @@ Sign-Recognition/
 ├── assets/                      # README images (results, training curves)
 ├── README.md
 ├── Sign-Recognition Poster.pdf
+└── labels.txt
 └── requirements.txt
 ```
 
