@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment/secrets
+.env
+
+# Large model/data files (optional — only if you don't want these tracked)
+# *.h5
+# data/ASL_dataset/
+# data/ISL_dataset/
