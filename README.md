@@ -131,6 +131,8 @@ of misclassifications between visually similar gestures.
 | ASL — Custom CNN  | **89.14%**          |
 | ISL — MobileNetV2 | **98.84%**          |
 
+The performance gap between the two models is largely explained by their underlying approach the ISL model benefits from transfer learning, leveraging MobileNetV2's ImageNet-pretrained feature extractor, which already encodes robust low and mid level visual features and requires the network to learn only a lightweight classification head. The ASL model is a custom CNN trained from scratch, so it must learn all feature representations from the ASL dataset alone making it more sensitive to dataset size and variability. This, combined with the ASL dataset's less varied sample pool, accounts for both its lower validation accuracy and its greater tendency to overfit.
+
 ### Confusion Matrix
 ![ISL Confusion Matrix](./output/confusion%20matrix%20-%20ISL.png)
 
